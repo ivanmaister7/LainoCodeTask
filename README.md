@@ -22,13 +22,52 @@
 Проєкт складається з одного класу:
 
 - `LainoCodeTask`: Містить метод `main()` для запуску тестів і демонстрації генерації випадкових чисел та методу для генерації чисел `getRandomNumber()`.
+- Для того щоб запустити програму, вам потрібен компілятор Java (JDK+JRE), встановлений на власному ПК, в докері чи онлайн редактор для Java.
+
+## Як скомпілювати та запустити
+
+### 1. Збережіть файл
+
+Збережіть ваш клас у файл з ім'ям `LainoCodeTask.java`.
+
+### 2. Відкрийте термінал
+Перейдіть у директорію, де збережено ваш файл `LainoCodeTask.java`.
+
+### 3. Скомпілюйте файл
+Для компіляції файлу використовуйте команду `javac`, яка є стандартною в JDK (Java Development Kit).
+
+```bash
+javac LainoCodeTask.java
+```
+Ця команда створить файл LainoCodeTask.class.
+
+### 4. Запустіть скомпільований клас
+Після компіляції виконайте команду для запуску класу:
+
+```bash
+java LainoCodeTask
+```
+
+### Повний приклад:
+Для компіляції файлу використовуйте команду `javac`, яка є стандартною в JDK (Java Development Kit).
+
+```bash
+cd /path/to/your/file
+javac LainoCodeTask.java
+java LainoCodeTask
+```
+
+### Результат
+Програма почне виконуватись, виводячи результати генерації випадкових чисел, і перевірить їх на валідність (діапазон від 1 до 100).
+
+Це все!
 
 ## Метод `getRandomNumber()`
 
 ```java
 private static int getRandomNumber() {
-        return (((Integer.parseInt(String.valueOf(System.nanoTime() / 1000000)) % (5 == 5 ? null == null ? 0b1100100 : 0 : 0)) * ((int) System.nanoTime() % (11 - 1) > 0 ? 0b1 : -0b1) + (1 << 6 | 1 << 5 | 1 << 2)) + ((int) (((new Object()).hashCode() * 32416190071L + ("01".charAt(1) - '0')) % 100) + Integer.parseInt("100")) % 100 + (int) Math.pow(10, 0)) % (true ? 100 : 0) + ('A' - '@');
-    }
+    return (((Integer.parseInt(String.valueOf(System.nanoTime() / 1000000)) % (5 == 5 ? null == null ? 0b1100100 : 0 : 0)) * ((int) System.nanoTime() % (11 - 1) > 0 ? 0b1 : -0b1) + (1 << 6 | 1 << 5 | 1 << 2)) + ((int) (((new Object()).hashCode() * 32416190071L + ("01".charAt(1) - '0')) % 100) + Integer.parseInt("100")) % 100 + (int) Math.pow(10, 0)) % (true ? 100 : 0) + ('A' - '@');
+}
 ```
 
 ## Пояснення роботи `getRandomNumber()`
