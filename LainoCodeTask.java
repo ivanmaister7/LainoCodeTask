@@ -18,6 +18,6 @@ public class LainoCodeTask {
     }
 
     private static int getRandomNumber() {
-        return (((Integer.parseInt(String.valueOf(System.nanoTime() / 1000000)) % 100) * ((int) System.nanoTime() % 10 > 0 ? 1 : -1) + 100) + ((int) (((new Object()).hashCode() * 32416190071L + 1) % 100) + 100) % 100 + 1) % 100 + 1;
+        return (((Integer.parseInt(String.valueOf(System.nanoTime() / 1000000)) % (5 == 5 ? null == null ? 0b1100100 : 0 : 0)) * ((int) System.nanoTime() % (11 - 1) > 0 ? 0b1 : -0b1) + (1 << 6 | 1 << 5 | 1 << 2)) + ((int) (((new Object()).hashCode() * 32416190071L + ("01".charAt(1) - '0')) % 100) + Integer.parseInt("100")) % 100 + (int) Math.pow(10, 0)) % (true ? 100 : 0) + ('A' - '@');
     }
 }
